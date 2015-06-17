@@ -20,6 +20,19 @@ cloned the repository for the game and then type:
 ```websocket@1.0.3 node_modules/websocket```  </br>
 _Percentage sign should not be typed, it's representing the prompt._ </br>
 
+There are two files that needs to be changed.</br>
+File ```gameserver.js```  </br>
+```var port = 8058;```  </br>
+The port number needs to be changed to the one you decide to use.<br/><br/>
+File ```main.js```  </br>
+```websocket = new WebSocket('ws://nodejs1.student.bth.se:8058'); ```  </br>
+Needs to be changed to the url and port you are using.</br>
+
+
+
+
+
+
 To start the webserver, navigate into the directory fiveinarow and then type<br/>
 ```node gameserver.js```
 
